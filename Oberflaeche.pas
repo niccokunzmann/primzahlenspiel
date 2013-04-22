@@ -351,6 +351,9 @@ begin
         spieler:= xspielfeld2.spieler.items[i];
         spieler.schieber.width:= (config.schieberwidth - config.minschieberwidth) / spielerzahl + minschieberwidth;
         spieler.schieber.set_laenge((config.schieberstartlaenge - config.minschieberstartlaenge) / spielerzahl + config.minschieberstartlaenge);
+    end;
+    for i := 0 to xspielfeld2.wall.Count - 1 do
+    begin
         wall:= xspielfeld2.wall.items[i];
         wall.width:= (config.wallbreite - config.minwallbreite) / spielerzahl + config.minwallbreite;
     end;

@@ -195,7 +195,7 @@ end;
 function Bewertung(spieler: Tspieler) : Tbewertung;
 begin
     if spieler.durch_ges <> 0 then
-        Result:= trunc(spieler.get_punkte * (1 + spieler.durch_prim /spieler.durch_ges))
+        Result:= trunc(spieler.get_punkte * (spieler.durch_prim /spieler.durch_ges))
     else
         Result:= spieler.get_punkte;
 end;
@@ -351,6 +351,9 @@ begin
         spieler:= xspielfeld2.spieler.items[i];
         spieler.schieber.width:= (config.schieberwidth - config.minschieberwidth) / spielerzahl + minschieberwidth;
         spieler.schieber.set_laenge((config.schieberstartlaenge - config.minschieberstartlaenge) / spielerzahl + config.minschieberstartlaenge);
+    end;
+    for i := 0 to xspielfeld2.wall.Count - 1 do
+    begin
         wall:= xspielfeld2.wall.items[i];
         wall.width:= (config.wallbreite - config.minwallbreite) / spielerzahl + config.minwallbreite;
     end;

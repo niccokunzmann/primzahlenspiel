@@ -42,13 +42,16 @@ object Form1: TForm1
   OnCreate = FormCreate
   OnKeyDown = FormKeyDown
   OnKeyUp = FormKeyUp
+  DesignSize = (
+    989
+    660)
   PixelsPerInch = 96
   TextHeight = 19
   object Image1: TImage
     Left = 0
     Top = 0
-    Width = 981
-    Height = 654
+    Width = 989
+    Height = 660
     Align = alClient
     AutoSize = True
   end
@@ -243,7 +246,7 @@ object Form1: TForm1
       Top = 80
       Width = 129
       Height = 25
-      Caption = 'hinzufügen'
+      Caption = 'hinzuf'#252'gen'
       TabOrder = 3
       OnClick = Button6Click
     end
@@ -341,7 +344,7 @@ object Form1: TForm1
       Top = 24
       Width = 121
       Height = 17
-      Caption = 'üben'
+      Caption = #252'ben'
       Checked = True
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
@@ -441,7 +444,7 @@ object Form1: TForm1
       Top = 40
       Width = 232
       Height = 16
-      Caption = 'die gewünschte Zahl wurde erreicht.'
+      Caption = 'die gew'#252'nschte Zahl wurde erreicht.'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -467,7 +470,7 @@ object Form1: TForm1
       Top = 80
       Width = 191
       Height = 16
-      Caption = 'Werten weitergeführt werden.'
+      Caption = 'Werten weitergef'#252'hrt werden.'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -548,20 +551,20 @@ object Form1: TForm1
     Lines.Strings = (
       'Hilfe!!'
       ''
-      'Oben rechts ist der Knopf für PAUSE.'
+      'Oben rechts ist der Knopf f'#252'r PAUSE.'
       
-        'Während des Spiels ist er markiert und kann für gewöhnlich mit L' +
-        'eertaste oder Maus ausgelöst werden.'
+        'W'#228'hrend des Spiels ist er markiert und kann f'#252'r gew'#246'hnlich mit L' +
+        'eertaste oder Maus ausgel'#246'st werden.'
       ''
       'EINSTELLEN kann man den Schwierigkeitsgrad:'
       
-        '<üben>, <leicht>, <mittel>, <schwer>, <irre> (sehr schwer), <irr' +
+        '<'#252'ben>, <leicht>, <mittel>, <schwer>, <irre> (sehr schwer), <irr' +
         'e irre> (doppelt schwer).'
       
-        'ZEITSPIEL ist eingestellt, wenn die Zahl dahinter größer als 0 i' +
+        'ZEITSPIEL ist eingestellt, wenn die Zahl dahinter gr'#246#223'er als 0 i' +
         'st.'
       'Dann wird bis zur eingegebenen Sekundenzahl gespielt.'
-      'Oder bis zu einer bestimmten ZAHL, wenn diese auch größer 0 ist.'
+      'Oder bis zu einer bestimmten ZAHL, wenn diese auch gr'#246#223'er 0 ist.'
       ''
       'ZUFALLSENDE verschiebt das Ende ein wenig nach vorn oder hinten.'
       ''
@@ -569,13 +572,13 @@ object Form1: TForm1
         'Um die STEUERUNG festzulegen muss ein leerer quadratischer Knopf' +
         ' angeklickt sein.'
       
-        'Beim drücken einer Taste erscheint die im Knopf. Die Taste ist d' +
+        'Beim dr'#252'cken einer Taste erscheint die im Knopf. Die Taste ist d' +
         'ann registriert und steuert ihren Schieber '
       'nach links bzw. nach rechts.'
-      'Automatisch wird zum nächsten Knopf gesprungen.'
-      'Das Viereck rechts darüber hat die Farbe des Spielers.'
+      'Automatisch wird zum n'#228'chsten Knopf gesprungen.'
+      'Das Viereck rechts dar'#252'ber hat die Farbe des Spielers.'
       
-        'Klick (oder Leertaste) >hinzufügen< und das Ganze für einen neue' +
+        'Klick (oder Leertaste) >hinzuf'#252'gen< und das Ganze f'#252'r einen neue' +
         'n Spieler.'
       ''
       'Bevor das Spiel startet:'
@@ -586,9 +589,9 @@ object Form1: TForm1
       ''
       
         'ZIEL des Spiels ist, so viele und hohe Primzahen zu sammeln, wie' +
-        ' nur möglich.'
+        ' nur m'#246'glich.'
       
-        'Gerät eine Primzahl hinter ihren Schieber, so kommt sie zur Punk' +
+        'Ger'#228't eine Primzahl hinter ihren Schieber, so kommt sie zur Punk' +
         'tzahl.'
       'Ist es keine Primzahl, wird ihr Wert abgezogen.'
       ''

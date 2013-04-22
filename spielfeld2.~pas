@@ -55,7 +55,7 @@ var wall : Twall;
 begin
     Result:= Tspieler.create(self, color);
     // add two walls so that there are no problems with parallel walls
-    wall:= Twall.create(0,0,0,0, self.wallbreite, self.wallfarbe);
+    wall:= Twall.create(0,0,0,0, self.wallbreite, self.wallfarbe and color);
     self.wall.add(wall);
     wall:= Twall.create(0,0,0,0, self.wallbreite, self.wallfarbe);
     self.wall.add(wall);
@@ -83,7 +83,7 @@ begin
      //   beta:=  self.get_spieler_beta(i);
         wall := self.wall.Items[i];
         wall.pos:= self.winkel_zu_pos(alpha);
-        if hat_zwei_teile_waelle then begin
+        if hat_zwei_teile_waelle and ((self.spielerzahl Div 2) > i) then begin
           wall.pos2:= self.winkel_zu_pos(alpha + beta / 2);
           wall := self.wall.Items[i + self.spielerzahl];
           wall.pos:= self.winkel_zu_pos(alpha + beta / 2);

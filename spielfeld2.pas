@@ -83,7 +83,7 @@ begin
      //   beta:=  self.get_spieler_beta(i);
         wall := self.wall.Items[i];
         wall.pos:= self.winkel_zu_pos(alpha);
-        if hat_zwei_teile_waelle then begin
+        if hat_zwei_teile_waelle and ((self.spielerzahl Div 2) > i) then begin
           wall.pos2:= self.winkel_zu_pos(alpha + beta / 2);
           wall := self.wall.Items[i + self.spielerzahl];
           wall.pos:= self.winkel_zu_pos(alpha + beta / 2);
