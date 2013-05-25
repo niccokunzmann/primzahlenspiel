@@ -15,3 +15,5 @@ Herausforderungen:
 Nicht aufgeben!
 
 - Man hat vielleicht mal Minuspunte aber kommt man wieder schnell nach vorn und an erste Stelle, da sie Zehlen immer höher werden, wenn man nicht aufgibt.
+
+![Ein gerade gestartetes Spiel](doku/started-a-game.png)
