@@ -3,7 +3,7 @@ primzahlenspiel
 
 Ein Spiel zum lernen, das man lange spielen kann.
 
-[Hier kann man das Spiel runterladen](https://github.com/niccokunzmann/primzahlenspiel/blob/master/primzahlenspiel.exe)
+[Hier kann man das Spiel runterladen](https://github.com/niccokunzmann/primzahlenspiel/raw/master/primzahlenspiel.exe)
 
 Ziel ist es, die Primzahlen den Rand erreichen zu lassen und alle Nicht-Primzahlen abzublocken oder aufzuspießen. 
 Es gibt verschiedene Schwierigkeitsgrade. Man kann es allein mit drehendem Spielfeld oder mit sehr vielen anderen spielen.
